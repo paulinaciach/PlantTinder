@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import {Text, View, ImageBackground, StyleSheet } from 'react-native'
 
 const Card = (props) => {
