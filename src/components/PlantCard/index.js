@@ -26,8 +26,8 @@ const styles = StyleSheet.create({
       alignItems: "center",
     },
     card: {
-      width: "95%",
-      height: "70%",
+      width: "100%",
+      height: "100%",
       borderRadius: 10,
       shadowColor: "#000",
       shadowOffset: {
@@ -49,13 +49,19 @@ const styles = StyleSheet.create({
     },
     name: {
       fontSize: 30,
-      color: 'black',
+      color: 'white',
       fontWeight: 'bold',
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 10
     },
     bio: {
       fontSize: 18,
-      color: 'black',
-      lineHeight: 24
+      color: 'white',
+      lineHeight: 24, 
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 10
     },
     cardInner: {
       padding: 10
