@@ -12,6 +12,10 @@ export default [{
     name: 'Rate'
 }, {
     id: 4,
+    icon: 'mail-outline',
+    name: 'Contact us!'
+},{
+    id: 5,
     icon: 'log-out-outline',
     name: 'Log out'
 }]
