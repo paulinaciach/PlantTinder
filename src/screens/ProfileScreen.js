@@ -97,14 +97,15 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   box: {
-    marginTop: 20,
-    marginBottom: 5,
+
     flexDirection: "row",
     borderBottomColor: "#E4EAE7",
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
   icon: {
     paddingRight: 15,
+    marginBottom: 10,
+    marginTop: 10
   },
   text: {
     fontSize: 22,

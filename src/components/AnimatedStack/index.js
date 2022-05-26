@@ -106,6 +106,7 @@ const AnimatedStack = (props) => {
         <View style={styles.nextContainer}>
           <Animated.View style={[styles.animatedCard, nextCardStyle]}>
             {renderItem({ item: nextProfile })}
+            
           </Animated.View>
         </View>
       )}
