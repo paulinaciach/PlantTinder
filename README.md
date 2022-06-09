@@ -151,13 +151,19 @@ const ProfileScreen = () => {
 
 ## Ilustracje - Front end 
 ### Home Screen
-![286199899_1202955743785630_3731952278597422113_n](https://user-images.githubusercontent.com/35393983/172929389-d0b4db81-3bb7-494a-a03d-844b81442052.jpg)
+<img src="https://user-images.githubusercontent.com/35393983/172929389-d0b4db81-3bb7-494a-a03d-844b81442052.jpg" alt="drawing" width="350"/>
+
 ### Animacja Like 
-![287003625_558892275632690_5066738859169970639_n](https://user-images.githubusercontent.com/35393983/172929507-bdc2e08b-c53b-49cf-9289-843cfbc0fb12.jpg)
+<img src="https://user-images.githubusercontent.com/35393983/172929507-bdc2e08b-c53b-49cf-9289-843cfbc0fb12.jpg" alt="drawing" width="350"/>
+
 ### Animacja Nope
-![286088487_695134481784265_5662377913720334049_n](https://user-images.githubusercontent.com/35393983/172929564-a0ca2574-37e6-49e2-97be-8e2a1d7b00aa.jpg)
+<img src="https://user-images.githubusercontent.com/35393983/172929564-a0ca2574-37e6-49e2-97be-8e2a1d7b00aa.jpg" alt="drawing" width="350"/>
+
 ### Matches/Czat Screen
- ![286024012_571472881216268_7837375433468724307_n](https://user-images.githubusercontent.com/35393983/172929596-1ea27d58-d3cf-4a4e-84de-ec5c589bed87.jpg)
+ <img src="https://user-images.githubusercontent.com/35393983/172929596-1ea27d58-d3cf-4a4e-84de-ec5c589bed87.jpg" alt="drawing" width="350"/>
+
 ### Profile Screen
-![286402076_254811670193084_3765221735931347418_n](https://user-images.githubusercontent.com/35393983/172929649-2f97a2dc-a3bb-407d-83bf-e4e942ca1aff.jpg)
+<img src="https://user-images.githubusercontent.com/35393983/172929649-2f97a2dc-a3bb-407d-83bf-e4e942ca1aff.jpg" alt="drawing" width="350"/>
+
+
 
