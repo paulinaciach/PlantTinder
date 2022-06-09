@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react-native";
 import {
   View,
   StyleSheet,
@@ -13,8 +13,8 @@ const ChatRoom = () => {
     <View style={styles.page}>
       <FlatList
         data={chatRoomsData}
-        renderItem={({ item, index }) => (
-          <ChatRoomItem key={item.id} chatRoom={item} />
+        renderItem={({ item }) => (
+          <ChatRoomItem chatRoom={item} key={item.ID} />
         )}
         showsVerticalScrollIndicator={false}
       />

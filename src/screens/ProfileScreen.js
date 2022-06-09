@@ -1,7 +1,7 @@
 import React from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 import "react-native-gesture-handler";
-import { SafeAreaView } from "react-native-web";
+import { SafeAreaView } from "react-native";
 import profile from "../../assets/data/profile";
 import Ionicons from "react-native-vector-icons/Ionicons";
 

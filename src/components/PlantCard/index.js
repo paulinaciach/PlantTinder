@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react-native";
 import {Text, View, ImageBackground, StyleSheet } from 'react-native'
 
 const Card = (props) => {
@@ -24,10 +24,11 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: "center",
       alignItems: "center",
+      width: '100%'
     },
     card: {
-      width: "100%",
-      height: "100%",
+      width: '100%',
+      height: '100%',
       borderRadius: 10,
       shadowColor: "#000",
       shadowOffset: {

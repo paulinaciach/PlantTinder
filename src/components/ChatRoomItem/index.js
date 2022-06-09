@@ -1,4 +1,5 @@
-import react from "react";
+import React from "react-native";
+
 import { Text, View, StyleSheet, Image } from "react-native";
 
 export default function ChatRoomItem({ chatRoom }) {

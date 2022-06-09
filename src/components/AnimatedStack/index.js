@@ -9,13 +9,17 @@ import Animated, {
   interpolate,
   runOnJS,
 } from "react-native-reanimated";
-import { PanGestureHandler } from "react-native-gesture-handler";
+import {
+  PanGestureHandler,
+  GestureHandlerRootView,
+} from "react-native-gesture-handler";
 import React, { useState, useEffect } from "react";
 import Like from "../../../assets/images/LIKE.png";
 import Nope from "../../../assets/images/nope.png";
+import BootomNav from "../BottomNav";
 
 const ROTATION = 60;
-const SWIPE_VELOCITY = 2;
+const SWIPE_VELOCITY = 400;
 
 const AnimatedStack = (props) => {
   const { data, renderItem, onSwipeLeft, onSwipeRight } = props;
@@ -78,7 +82,7 @@ const AnimatedStack = (props) => {
       translateX.value = context.startX + event.translationX;
     },
     onEnd: (event) => {
-      console.log("Touch ended ", event.velocityX);
+      //  console.log("Touch ended ", event.velocityX);
       if (Math.abs(event.velocityX) < SWIPE_VELOCITY) {
         translateX.value = withSpring(0);
         return;
@@ -101,33 +105,36 @@ const AnimatedStack = (props) => {
   }, [currentIndex]);
 
   return (
-    <View style={styles.root}>
-      {nextProfile && (
-        <View style={styles.nextContainer}>
-          <Animated.View style={[styles.animatedCard, nextCardStyle]}>
-            {renderItem({ item: nextProfile })}
-            
-          </Animated.View>
-        </View>
-      )}
-      {currentProfile && (
-        <PanGestureHandler onGestureEvent={gestureHandler}>
-          <Animated.View style={[styles.animatedCard, cardStyle]}>
-            <Animated.Image
-              source={Like}
-              style={[styles.like, { left: 10 }, likeStyle]}
-              resizeMode="contain"
-            />
-            <Animated.Image
-              source={Nope}
-              style={[styles.like, { right: 10 }, nopeStyle]}
-              resizeMode="contain"
-            />
-            {renderItem({ item: currentProfile })}
-          </Animated.View>
-        </PanGestureHandler>
-      )}
-    </View>
+    <GestureHandlerRootView style={styles.root}>
+      <View style={styles.rootView}>
+        {nextProfile && (
+          <View style={styles.nextContainer}>
+            <Animated.View style={[styles.animatedCard, nextCardStyle]}>
+              {renderItem({ item: nextProfile })}
+            </Animated.View>
+          </View>
+        )}
+        {currentProfile && (
+          <PanGestureHandler onGestureEvent={gestureHandler}>
+            <Animated.View style={[styles.animatedCard, cardStyle]}>
+              <Animated.Image
+                source={Like}
+                style={[styles.like, { left: 10 }, likeStyle]}
+                resizeMode="contain"
+              />
+              <Animated.Image
+                source={Nope}
+                style={[styles.like, { right: 10 }, nopeStyle]}
+                resizeMode="contain"
+              />
+              {renderItem({ item: currentProfile })}
+            </Animated.View>
+          </PanGestureHandler>
+        )}
+
+       
+      </View>
+    </GestureHandlerRootView>
   );
 };
 
@@ -139,7 +146,19 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    height: "100%",
+
+  }, rootView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+
+  },
+  bottomNav: {
+    justifyContent: "center",
+    alignItems: "center",
+    paddingLeft: 20,
+
   },
   animatedCard: {
     width: "90%",

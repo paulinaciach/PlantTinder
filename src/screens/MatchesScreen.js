@@ -1,7 +1,7 @@
 import React from "react-native";
 import { View, Text, StyleSheet, Image, ScrollView } from "react-native";
 import "react-native-gesture-handler";
-import { SafeAreaView } from "react-native-web";
+import { SafeAreaView } from "react-native";
 import users from "../../assets/data/users";
 import ChatRoom from "../components/ChatRoom";
 
@@ -21,8 +21,8 @@ const MatchesScreen = () => {
         >
           <View horizontal={true} style={styles.users}>
             {users.map((user) => (
-              <View style={styles.user} key={user.idi}>
-                <Image source={{ uri: user.image }} style={styles.image} />
+              <View style={styles.user} key={user.id}>
+                <Image source={{ uri: user.image }} style={styles.image} key={user.id}/>
               </View>
             ))}
           </View>

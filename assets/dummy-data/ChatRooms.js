@@ -1,5 +1,5 @@
 export default [{
-  id: '1',
+  ID: '1',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
@@ -15,7 +15,7 @@ export default [{
     createdAt: '05-03 14:48',
   }
 }, {
-  id: '2',
+  ID: '2',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
@@ -31,7 +31,7 @@ export default [{
     createdAt: '05-02 15:40',
   }
 }, {
-  id: '3',
+  ID: '3',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
@@ -47,7 +47,7 @@ export default [{
     createdAt: '05-02 14:48',
   }
 }, {
-  id: '4',
+  ID: '4',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
@@ -63,7 +63,7 @@ export default [{
     createdAt: '06-29 14:48',
   }
 }, {
-  id: '5',
+  ID: '5',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
@@ -79,7 +79,7 @@ export default [{
     createdAt: '05-02 15:40',
   }
 }, {
-  id: '6',
+  ID: '6',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
@@ -95,7 +95,7 @@ export default [{
     createdAt: '05-02 15:40',
   }
 },{
-  id: '6',
+  ID: '6',
   users: [{
     id: 'u1',
     name: 'Paula Ciach',
